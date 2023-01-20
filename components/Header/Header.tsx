@@ -2,16 +2,17 @@ import Image from "next/image";
 import React from "react";
 import { HeaderComponent } from "./styled";
 import { WhatsApp } from "../E__export";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <HeaderComponent>
       <h1>La Costa</h1>
       <nav>
-        <a href="">Produtos e Serviços</a>
-        <a href="">Sobre nós</a>
-        <a href="">Asseguradoras</a>
-        <a href="">Contato</a>
+        <Link href="/">Produtos e Serviços</Link>
+        <Link href="/">Sobre nós</Link>
+        <Link href="/">Asseguradoras</Link>
+        <Link href="/">Contato</Link>
         <button>
           <Image src={WhatsApp} alt="Whatsapp" />
           WhatsApp
