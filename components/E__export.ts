@@ -11,5 +11,8 @@ export { default as ProductsCaroussel } from "./ProductsCaroussel/ProductsCarous
 
 /* ---------------- Images/icons exports ---------------- */
 
-export { default as WhatsApp } from "../public/assets/whatsapp.svg";
-export { default as MainBanner } from "../public/assets/main-banner.jpg";
+export { default as WhatsApp } from "/public/assets/whatsapp.svg";
+export { default as MainBanner } from "/public/assets/main-banner.jpg";
+export { default as FamilyPicture } from "/public/assets/family.jpg";
+export { default as RightArrow } from "/public/assets/right-arrow.svg";
+export { default as LeftArrow } from "/public/assets/left-arrow.svg";

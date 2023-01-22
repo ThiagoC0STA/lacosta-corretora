@@ -7,7 +7,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <HeaderComponent>
-      <h1>La Costa</h1>
+      <h1>LA COSTA</h1>
       <nav>
         <Link href="/">Produtos e Serviços</Link>
         <Link href="/">Sobre nós</Link>

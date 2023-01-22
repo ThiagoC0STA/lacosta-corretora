@@ -1,7 +1,46 @@
 import React from "react";
+import Slider from "react-slick";
+import { Card, ProductsCarousselComponent } from "./styled";
+import { ProductsItems } from "../../utils/items";
+import Image from "next/image";
 
 const ProductsCaroussel = () => {
-  return <div></div>;
+  const settings = {
+    speed: 700,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  };
+  return (
+    <ProductsCarousselComponent>
+      <Slider {...settings}>
+        {ProductsItems.map(({ id, name, description, img, alt }) => (
+          <div key={id}>
+            <Card>
+              <div>
+                <h3>{name}</h3>
+                <p>{description}</p>
+              </div>
+              <Image src={img} alt={alt} />
+            </Card>
+          </div>
+        ))}
+      </Slider>
+    </ProductsCarousselComponent>
+  );
 };
 
 export default ProductsCaroussel;

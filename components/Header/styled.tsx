@@ -5,6 +5,7 @@ export const HeaderComponent = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0 4vw;
+  background-color: #f1f1f1;
 
   a,
   button {
@@ -26,7 +27,7 @@ export const HeaderComponent = styled.header`
     align-items: center;
     padding: 10px 20px;
     gap: 8px;
-    background-color: #0c6493;
+    background-color: #2ca806;
     color: var(--g1);
     border-radius: 25px;
     border: none;
@@ -36,7 +37,7 @@ export const HeaderComponent = styled.header`
     transition: all 0.4s ease;
 
     :hover {
-      background-color: #1e86bd;
+      background-color: #42ca18;
     }
   }
 `;

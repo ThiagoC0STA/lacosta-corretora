@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const MainComponent = styled.main`
+  height: 85vh;
+  width: 100%;
+  z-index: 0;
+  position: relative;
+
   div {
     background: linear-gradient(
       90deg,
       rgba(1, 5, 15, 0.9) 0%,
-      rgba(1, 5, 15, 0.95) 38.34%,
-      rgba(1, 5, 15, 0.8) 66.04%,
-      rgba(1, 5, 15, 0.38) 82.06%,
+      rgba(1, 5, 15, 0.8) 29.69%,
+      rgba(1, 5, 15, 0.7) 63.01%,
       rgba(1, 5, 15, 0.16) 100%
     );
     position: absolute;
+    z-index: 0;
     height: 85vh;
     width: 100%;
-    z-index: 1;
     color: var(--g1);
     padding: 15vh 7vw;
     display: flex;
@@ -26,6 +30,15 @@ export const MainComponent = styled.main`
     color: var(--g1);
     font-style: normal;
     font-weight: 700;
+
+    ::before {
+      content: "";
+      width: 100px;
+      height: 1px;
+      background-color: var(--g1);
+      position: absolute;
+      margin: 60px 0 0 20px;
+    }
   }
 
   p {
@@ -57,6 +70,5 @@ export const MainComponent = styled.main`
     width: 100%;
     object-fit: cover;
     position: absolute;
-    z-index: 0;
   }
 `;
