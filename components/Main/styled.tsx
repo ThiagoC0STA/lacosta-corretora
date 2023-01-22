@@ -41,7 +41,7 @@ export const MainComponent = styled.main`
     }
   }
 
-  p {
+  h2 {
     font-size: var(--p1);
     max-width: 43vw;
     font-weight: 400;

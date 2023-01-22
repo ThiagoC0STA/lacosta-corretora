@@ -27,25 +27,24 @@ export const Card = styled.div`
     border-radius: 8px;
   }
 
-  h3 {
+  p {
+    color: #fff;
     position: absolute;
+    letter-spacing: 0.002em;
+    line-height: 27px;
+    max-width: 20vw;
+  }
+
+  p:nth-child(1) {
     margin: 5vh 0 11px 3vw;
     font-weight: 600;
     font-size: 1.3rem;
-    line-height: 32px;
-    letter-spacing: 0.002em;
-    color: #fff;
   }
 
-  p {
-    position: absolute;
+  p:nth-child(2) {
     margin: 11vh 0 11px 3vw;
     font-weight: 400;
     font-size: 0.83rem;
-    max-width: 20vw;
-    line-height: 32px;
-    letter-spacing: 0.002em;
-    color: #fff;
   }
 
   div {

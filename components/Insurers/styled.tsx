@@ -23,7 +23,7 @@ export const InsurersSection = styled.section`
 
   p {
     font-size: 1rem;
-    color: var(--g6);
+    color: var(--g7);
     font-weight: 300;
     margin-top: -4vh;
   }
@@ -33,13 +33,13 @@ export const InsurersCaroussel = styled.div`
   width: 100%;
 
   figure {
+    margin-left: 2.2vw;
     width: 150px;
     height: 150px;
-    margin-left: 2.2vw;
 
     img {
-      width: 100%;
-      height: 100%;
+      width: auto;
+      height: auto;
       object-fit: contain;
     }
   }

@@ -31,7 +31,7 @@ const ProductsCaroussel = () => {
           <div key={id}>
             <Card>
               <div>
-                <h3>{name}</h3>
+                <p>{name}</p>
                 <p>{description}</p>
               </div>
               <Image src={img} alt={alt} />

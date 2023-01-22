@@ -19,7 +19,7 @@ export const Texts = styled.div`
   p:nth-child(1) {
     font-weight: 300;
     font-size: 1rem;
-    color: var(--g6);
+    color: var(--g7);
   }
 
   p:nth-child(3) {
@@ -69,7 +69,7 @@ export const Texts = styled.div`
     }
 
     button:first-child {
-      background-color: var(--b2);
+      background-color: var(--b3);
       color: var(--g1);
 
       :hover {
@@ -83,7 +83,7 @@ export const Texts = styled.div`
       color: var(--b3);
 
       :hover {
-        background-color: var(--b2);
+        background-color: var(--b3);
         color: var(--g1);
       }
     }

@@ -27,7 +27,7 @@ export const HeaderComponent = styled.header`
     align-items: center;
     padding: 10px 20px;
     gap: 8px;
-    background-color: #2ca806;
+    background-color: #258406;
     color: var(--g1);
     border-radius: 25px;
     border: none;

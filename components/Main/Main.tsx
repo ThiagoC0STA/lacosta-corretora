@@ -14,12 +14,12 @@ const Main = () => {
       />
       <div>
         <h1>Bem-vindo à La costa Corretora de Seguros</h1>
-        <p>
+        <h2>
           A La costa oferece uma variedade de opções de seguros para atender às
           suas necessidades. Nossa equipe está pronta para ajudá-lo a encontrar
           a melhor cobertura. Entre em contato conosco para saber mais ou
           solicite uma cotação.
-        </p>
+        </h2>
         <button>Cotação gratuita</button>
       </div>
     </MainComponent>
