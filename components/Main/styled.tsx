@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainComponent = styled.main`
-  height: 85vh;
+  height: 80vh;
   width: 100%;
   z-index: 0;
   position: relative;
@@ -16,7 +16,7 @@ export const MainComponent = styled.main`
     );
     position: absolute;
     z-index: 0;
-    height: 85vh;
+    height: 75vh;
     width: 100%;
     color: var(--g1);
     padding: 15vh 7vw;
@@ -66,9 +66,9 @@ export const MainComponent = styled.main`
   }
 
   img {
-    height: 85vh;
+    height: auto;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     position: absolute;
   }
 `;
