@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductsCarousselComponent = styled.section`
   padding: 0 4vw 0 4.8vw;
   width: 100%;
-  margin-top: -10vh;
+  margin-top: -6vh;
 
   .slick-dots {
     bottom: -8vh;
@@ -28,7 +28,7 @@ export const Card = styled.div`
   }
 
   p {
-    color: #fff;
+    color: #000000;
     position: absolute;
     letter-spacing: 0.002em;
     line-height: 27px;
@@ -51,7 +51,8 @@ export const Card = styled.div`
     position: absolute;
     width: 25vw;
     height: 28vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: #f8fdff;
+    box-shadow: 0px 4px 5px rgba(0, 28, 56, 0.341);
     border-radius: 8px;
   }
 `;

@@ -1,5 +1,5 @@
 import Exemplo from "/public/assets/products/exemplo.jpg";
-import Exemplo2 from "/public/assets/insurers/sulamerica.png";
+import Exemplo2 from "/public/assets/insurers/hdi.png";
 
 import Person1 from "/public/assets/persons/person1.jpg";
 

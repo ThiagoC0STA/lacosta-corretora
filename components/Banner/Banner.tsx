@@ -15,7 +15,7 @@ const Banner = () => {
         </p>
         <button>Cotação</button>
       </div>
-      <Image src={Banner2Image} alt="Banner" />
+      <Image src={Banner2Image} alt="Banner" quality={100} />
     </BannerComponent>
   );
 };

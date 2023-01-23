@@ -33,9 +33,12 @@ export const InsurersCaroussel = styled.div`
   width: 100%;
 
   figure {
-    margin-left: 2.2vw;
-    width: 150px;
-    height: 150px;
+    margin-left: 0.9vw;
+    width: 12.5vw;
+    height: 18.5vh;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    box-shadow: 0px 3px 7px rgba(53, 57, 60, 0.16);
 
     img {
       width: auto;

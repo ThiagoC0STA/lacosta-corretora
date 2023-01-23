@@ -48,7 +48,7 @@ const Insurers = () => {
     speed: 700,
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToScroll: 1,
     dots: false,
     arrows: true,
     autoplay: true,

@@ -9,14 +9,13 @@ export const MainComponent = styled.main`
   div {
     background: linear-gradient(
       90deg,
-      rgba(1, 5, 15, 0.9) 0%,
-      rgba(1, 5, 15, 0.8) 29.69%,
-      rgba(1, 5, 15, 0.7) 63.01%,
-      rgba(1, 5, 15, 0.16) 100%
+      rgba(24, 49, 69, 0.6) 0%,
+      rgba(24, 49, 69, 0.55) 65%,
+      rgba(24, 49, 69, 0.25) 100%
     );
     position: absolute;
     z-index: 0;
-    height: 75vh;
+    height: 79vh;
     width: 100%;
     color: var(--g1);
     padding: 15vh 7vw;
@@ -44,24 +43,24 @@ export const MainComponent = styled.main`
   h2 {
     font-size: var(--p1);
     max-width: 43vw;
-    font-weight: 300;
+    font-weight: 400;
   }
 
   button {
-    background: var(--b5);
+    background: var(--b2);
     font-size: var(--p2);
-    color: var(--g1);
+    color: #e6edff; 
     border-radius: 10px;
+    letter-spacing: 1px;
     border: none;
-    width: 200px;
-    height: 45px;
-    font-weight: 600;
+    width: 15vw;
+    height: 6vh;
+    font-weight: 700;
     cursor: pointer;
     transition: all ease 0.4s;
 
     :hover {
-      background: var(--b3);
-      box-shadow: 0 0 10px #286ad4b5;
+      background: var(--b1);
     }
   }
 

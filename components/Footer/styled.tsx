@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterComponent = styled.footer`
   height: 15vh;
-  background-color: var(--g10);
+  background-color: #e5e8ec;
   padding: 0 4vw;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@ export const FooterComponent = styled.footer`
   p {
     font-weight: 300;
     font-size: 16px;
-    color: var(--g3);
+    color: var(--g10);
   }
 
   div {
@@ -23,14 +23,14 @@ export const FooterComponent = styled.footer`
     button {
       width: 3rem;
       height: 3rem;
-      background: #7eaedd;
+      background: #49596E;
       border-radius: 4px;
       border: none;
       transition: all 0.4s ease;
       cursor: pointer;
 
       :hover {
-        background: var(--b1);
+        background: #7b87b4;
       }
     }
   }

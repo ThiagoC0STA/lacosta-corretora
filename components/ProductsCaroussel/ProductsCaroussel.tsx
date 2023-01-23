@@ -34,7 +34,6 @@ const ProductsCaroussel = () => {
                 <p>{name}</p>
                 <p>{description}</p>
               </div>
-              <Image src={img} alt={alt} />
             </Card>
           </div>
         ))}

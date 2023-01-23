@@ -10,7 +10,7 @@ export const BannerComponent = styled.section`
   }
 
   div {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(212, 217, 226, 0.27);
     width: 100%;
     height: 50vh;
     position: absolute;
@@ -19,7 +19,7 @@ export const BannerComponent = styled.section`
     align-items: center;
     justify-content: start;
     padding-top: 5vh;
-    color: var(--g1);
+    color: var(--g10);
 
     h3 {
       font-weight: 600;
@@ -27,27 +27,28 @@ export const BannerComponent = styled.section`
     }
 
     p {
-      font-weight: 300;
+      font-weight: 400;
       font-size: 1rem;
       max-width: 40vw;
       text-align: center;
     }
 
     button {
-      background: var(--b3);
+      background: var(--b2);
       border-radius: 8px;
       padding: 1.9vh 6.25vw;
       margin-top: 6vh;
       font-weight: 600;
       font-size: 0.9rem;
       color: var(--g1);
-      border: 2px solid var(--b3);
+      border: 2px solid var(--b2);
       cursor: pointer;
       transition: all ease 0.4s;
 
       :hover {
         background-color: transparent;
-        color: var(--g3);
+        color: var(--b7);
+        border: 2px solid var(--b7);
       }
     }
   }

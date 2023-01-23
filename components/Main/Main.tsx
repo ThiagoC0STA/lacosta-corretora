@@ -20,7 +20,7 @@ const Main = () => {
           a melhor cobertura. Entre em contato conosco para saber mais ou
           solicite uma cotação.
         </h2>
-        <button>Cotação gratuita</button>
+        <button>COTAÇÃO GRATUITA</button>
       </div>
     </MainComponent>
   );

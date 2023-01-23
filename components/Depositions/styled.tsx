@@ -46,6 +46,7 @@ export const Card = styled.div`
   div {
     box-shadow: 0px 3px 7px rgba(33, 37, 41, 0.16);
     border-radius: 8px;
+    background-color: #fcfcfc;
     width: 24vw;
     margin-left: 2vw;
     height: 48vh;

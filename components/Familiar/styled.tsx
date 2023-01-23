@@ -63,27 +63,27 @@ export const Texts = styled.div`
       font-weight: 600;
       font-size: 1rem;
       padding: 12px 36px;
-      border: 2px solid var(--b3);
+      border: 2px solid var(--b2);
       transition: all ease 0.4s;
       cursor: pointer;
     }
 
     button:first-child {
-      background-color: var(--b3);
+      background-color: var(--b2);
       color: var(--g1);
 
       :hover {
         background-color: transparent;
-        color: var(--b3);
+        color: var(--b2);
       }
     }
 
     button:last-child {
       background-color: transparent;
-      color: var(--b3);
+      color: var(--b2);
 
       :hover {
-        background-color: var(--b3);
+        background-color: var(--b2);
         color: var(--g1);
       }
     }
