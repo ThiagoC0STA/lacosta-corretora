@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InsurersSection = styled.section`
-  margin-top: 25vh;
+  margin-top: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,5 +1,7 @@
-import Exemplo from "../public/assets/products/exemplo.jpg";
-import Exemplo2 from "../public/assets/insurers/sulamerica.png";
+import Exemplo from "/public/assets/products/exemplo.jpg";
+import Exemplo2 from "/public/assets/insurers/sulamerica.png";
+
+import Person1 from "/public/assets/persons/person1.jpg";
 
 export const ProductsItems = [
   {
@@ -117,44 +119,44 @@ export const InsurerItems = [
 export const DepositionsItems = [
   {
     id: 1,
-    img: "",
-    name: "",
-    profession: "",
-    text: "",
+    img: Person1,
+    name: "Bruno Menzes",
+    profession: "Empreendedor",
+    text: "Eu confio na Corretora de Seguros La costa há anos. Eles sempre foram muito úteis em me ajudar a encontrar a melhor solução de seguro",
   },
   {
     id: 2,
-    img: "",
-    name: "",
-    profession: "",
-    text: "",
+    img: Person1,
+    name: "Bruno Menzes",
+    profession: "Empreendedor",
+    text: "Eu confio na Corretora de Seguros La costa há anos. Eles sempre foram muito úteis em me ajudar a encontrar a melhor solução de seguro",
   },
   {
     id: 3,
-    img: "",
-    name: "",
-    profession: "",
-    text: "",
+    img: Person1,
+    name: "Bruno Menzes",
+    profession: "Empreendedor",
+    text: "Eu confio na Corretora de Seguros La costa há anos. Eles sempre foram muito úteis em me ajudar a encontrar a melhor solução de seguro",
   },
   {
     id: 4,
-    img: "",
-    name: "",
-    profession: "",
-    text: "",
+    img: Person1,
+    name: "Bruno Menzes",
+    profession: "Empreendedor",
+    text: "Eu confio na Corretora de Seguros La costa há anos. Eles sempre foram muito úteis em me ajudar a encontrar a melhor solução de seguro",
   },
   {
     id: 5,
-    img: "",
-    name: "",
-    profession: "",
-    text: "",
+    img: Person1,
+    name: "Bruno Menzes",
+    profession: "Empreendedor",
+    text: "Eu confio na Corretora de Seguros La costa há anos. Eles sempre foram muito úteis em me ajudar a encontrar a melhor solução de seguro",
   },
   {
     id: 6,
-    img: "",
-    name: "",
-    profession: "",
-    text: "",
+    img: Person1,
+    name: "Bruno Menzes",
+    profession: "Empreendedor",
+    text: "Eu confio na Corretora de Seguros La costa há anos. Eles sempre foram muito úteis em me ajudar a encontrar a melhor solução de seguro",
   },
 ];

@@ -8,8 +8,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  height: 700vh;
   font-family: "Poppins", sans-serif;
+  background-color: var(--g2);
 }
 
 .container {
@@ -42,7 +42,7 @@ a {
 :root {
   /* Grey (10 colors pallete) */
   --g1: #fdfdfd;
-  --g2: #e9ecef;
+  --g2: #f6f8fa;
   --g3: #dee2e6;
   --g4: #ced4da;
   --g5: #adb5bd;

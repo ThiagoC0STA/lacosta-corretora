@@ -1,7 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import {
+  Banner,
+  Depositions,
   Familiar,
+  Footer,
   Header,
   Insurers,
   Main,
@@ -27,6 +30,9 @@ const Home: NextPage = () => {
       <ProductsCaroussel />
       <Familiar />
       <Insurers />
+      <Banner />
+      <Depositions />
+      <Footer />
     </>
   );
 };

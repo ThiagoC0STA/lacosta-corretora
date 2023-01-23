@@ -5,7 +5,7 @@ export const HeaderComponent = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0 4vw;
-  background-color: #f1f1f1;
+  background-color: var(--g2);
 
   a,
   button {

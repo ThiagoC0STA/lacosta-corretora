@@ -63,7 +63,7 @@ export const Texts = styled.div`
       font-weight: 600;
       font-size: 1rem;
       padding: 12px 36px;
-      border: 2px solid var(--b2);
+      border: 2px solid var(--b3);
       transition: all ease 0.4s;
       cursor: pointer;
     }

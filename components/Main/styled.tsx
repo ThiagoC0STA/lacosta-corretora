@@ -44,7 +44,7 @@ export const MainComponent = styled.main`
   h2 {
     font-size: var(--p1);
     max-width: 43vw;
-    font-weight: 400;
+    font-weight: 300;
   }
 
   button {

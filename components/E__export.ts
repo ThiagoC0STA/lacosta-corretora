@@ -16,3 +16,8 @@ export { default as MainBanner } from "/public/assets/main-banner.jpg";
 export { default as FamilyPicture } from "/public/assets/family.jpg";
 export { default as RightArrow } from "/public/assets/right-arrow.svg";
 export { default as LeftArrow } from "/public/assets/left-arrow.svg";
+export { default as Banner2Image } from "/public/assets/banner2.jpg";
+export { default as BlueChat } from "/public/assets/bluechat.svg";
+export { default as Facebook } from "/public/assets/facebook.svg";
+export { default as Instagram } from "/public/assets/instagram.svg";
+export { default as Linkedin } from "/public/assets/linkedin.svg";
