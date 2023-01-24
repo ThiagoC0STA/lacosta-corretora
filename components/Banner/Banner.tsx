@@ -1,9 +1,13 @@
 import Image from "next/image";
 import React from "react";
+import { useContext } from "react";
+import { Contexts } from "../../contexts/GlobalContext";
 import { Banner2Image } from "../E__export";
 import { BannerComponent } from "./styled";
 
 const Banner = () => {
+  const { setModalForm } = useContext(Contexts);
+
   return (
     <BannerComponent>
       <div>
@@ -13,7 +17,7 @@ const Banner = () => {
           para atender essas necessidades, ajudando encontrar a melhor solução
           de seguro possível
         </p>
-        <button>Cotação</button>
+        <button onClick={() => setModalForm(true)}>Cotação</button>
       </div>
       <Image src={Banner2Image} alt="Banner" quality={100} />
     </BannerComponent>

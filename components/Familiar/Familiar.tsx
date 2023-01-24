@@ -1,9 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { Contexts } from "../../contexts/GlobalContext";
 import { FamilyPicture } from "../E__export";
 import { FamiliarSection, Texts } from "./styled";
 
 const Familiar = () => {
+  const { setModalForm } = useContext(Contexts);
+
   return (
     <FamiliarSection className="container">
       <Texts>
@@ -21,7 +24,7 @@ const Familiar = () => {
         </p>
         <div>
           <button>Contato</button>
-          <button>Cotação</button>
+          <button onClick={() => setModalForm(true)}>Cotação</button>
         </div>
       </Texts>
 

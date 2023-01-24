@@ -1,9 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
+import { Contexts } from "../../contexts/GlobalContext";
 import { MainBanner } from "../E__export";
 import { MainComponent } from "./styled";
 
 const Main = () => {
+  const { setModalForm } = useContext(Contexts);
+
   return (
     <MainComponent>
       <Image
@@ -20,7 +23,7 @@ const Main = () => {
           a melhor cobertura. Entre em contato conosco para saber mais ou
           solicite uma cotação.
         </h2>
-        <button>COTAÇÃO GRATUITA</button>
+        <button onClick={() => setModalForm(true)}>COTAÇÃO GRATUITA</button>
       </div>
     </MainComponent>
   );
