@@ -23,7 +23,7 @@ export const FooterComponent = styled.footer`
     button {
       width: 3rem;
       height: 3rem;
-      background: #49596E;
+      background: #757c84;
       border-radius: 4px;
       border: none;
       transition: all 0.4s ease;

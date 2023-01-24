@@ -12,6 +12,7 @@ import {
 } from "../components/E__export";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Form from "../components/Form/Form";
 
 const Home: NextPage = () => {
   return (
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
       <Insurers />
       <Banner />
       <Depositions />
+      <Form />
       <Footer />
     </>
   );
