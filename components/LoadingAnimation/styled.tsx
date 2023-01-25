@@ -69,7 +69,7 @@ export const LoadingContainer = styled.div`
     font-family: "Alex Brush", cursive;
     color: #4e90d1f5;
     transform: rotate(-15deg);
-    margin: 25vh 0 0 22vw;
+    margin: 203px 0 0 360px;
     font-size: 40px;
     position: absolute;
   }
