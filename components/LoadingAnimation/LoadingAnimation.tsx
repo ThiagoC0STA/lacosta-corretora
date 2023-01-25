@@ -3,17 +3,23 @@ import { LoadingContainer } from "./styled";
 
 const LoadingAnimation = () => {
   const [showLoading, setShowLoading] = useState(true);
+  const [delayAnimation, setDelayAnimation] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setShowLoading(false);
-    }, 4500);
+    }, 6300);
+
+    setTimeout(() => {
+      setDelayAnimation(true);
+    }, 2000);
   }, []);
 
   return showLoading ? (
     <LoadingContainer>
       <h1>LA COSTA</h1>
-      <p>Corretora</p>
+      <p>CORRETORA DE SEGUROS</p>
+      {delayAnimation && <p>25 anos</p>}
     </LoadingContainer>
   ) : (
     <div></div>

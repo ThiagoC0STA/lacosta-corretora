@@ -11,3 +11,22 @@ export const FormDiv = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const FormComponent = styled.div`
+  width: 40vw;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #fff;
+
+  form {
+    display: flex;
+    flex-direction: column;
+}
+`;
+
+export const LabelsDiv = styled.div`
+  
+`
