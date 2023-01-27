@@ -34,14 +34,14 @@ export const BannerComponent = styled.section`
     }
 
     button {
-      background: var(--b2);
+      background: var(--b3);
       border-radius: 8px;
       padding: 1.9vh 6.25vw;
       margin-top: 6vh;
       font-weight: 600;
       font-size: 0.9rem;
       color: var(--g1);
-      border: 2px solid var(--b2);
+      border: 2px solid var(--b3);
       cursor: pointer;
       transition: all ease 0.4s;
 

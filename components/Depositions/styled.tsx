@@ -23,7 +23,7 @@ export const DepoisitionsSection = styled.section`
 
   p {
     font-size: 1rem;
-    color: var(--g7);
+    color: var(--g10);
     font-weight: 300;
     margin-top: -4vh;
   }
@@ -82,7 +82,7 @@ export const Card = styled.div`
     h5 {
       font-weight: 300;
       font-size: 0.8rem;
-      color: var(--g6);
+      color: var(--g10);
       margin: -3.2vh 0 9vh 0;
     }
 

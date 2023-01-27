@@ -17,7 +17,9 @@ const Header = () => {
       <nav>
         <Link href="#about">Sobre nós</Link>
         <Link href="#insurers">Asseguradoras</Link>
-        <a onClick={() => setContactForm(true)}>Contato</a>
+        <Link href="/" onClick={() => setContactForm(true)}>
+          Contato
+        </Link>
         <Link
           href="https://wa.me/5541991751000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lacosta%2C%20tudo%20bem%3F"
           target="_blank"
