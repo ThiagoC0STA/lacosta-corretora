@@ -47,7 +47,7 @@ const ContactForm = () => {
         </form>
 
         <figure>
-          <Image src={Contactformimg} alt="contato" />
+          <Image src={Contactformimg} alt="contato" priority={true} />
         </figure>
       </ContactComponent>
     </FormDiv>

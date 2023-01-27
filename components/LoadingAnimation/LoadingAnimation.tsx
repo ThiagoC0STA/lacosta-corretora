@@ -8,7 +8,7 @@ const LoadingAnimation = () => {
   useEffect(() => {
     setTimeout(() => {
       setShowLoading(false);
-    }, 6300);
+    }, 6000);
 
     setTimeout(() => {
       setDelayAnimation(true);

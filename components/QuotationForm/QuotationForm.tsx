@@ -163,7 +163,7 @@ const QuotationForm: any = () => {
           {renderStep()}
         </form>
         <figure>
-          <Image src={Quotationformimg} alt="contato" quality={100} />
+          <Image src={Quotationformimg} alt="contato" priority={true} />
         </figure>
       </FormComponent>
     </FormDiv>
