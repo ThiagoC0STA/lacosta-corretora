@@ -16,7 +16,7 @@ const Main = () => {
         priority={true}
       />
       <div>
-        <h1>Bem-vindo à La costa Corretora de Seguros</h1>
+        <h1>La costa corretora <strong> seguros e consórcios</strong></h1>
         <h2>
           A La costa oferece uma variedade de opções de seguros para atender às
           suas necessidades. Nossa equipe está pronta para ajudá-lo a encontrar

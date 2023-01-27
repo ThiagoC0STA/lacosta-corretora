@@ -25,13 +25,13 @@ const ProductsCaroussel = () => {
     ],
   };
   return (
-    <ProductsCarousselComponent>
+    <ProductsCarousselComponent id="products">
       <Slider {...settings}>
         {ProductsItems.map(({ id, name, description, img, alt }) => (
           <div key={id}>
             <Card>
               <div>
-                <p>{name}</p>
+                <p>{name}<strong>.</strong></p>
                 <p>{description}</p>
               </div>
             </Card>

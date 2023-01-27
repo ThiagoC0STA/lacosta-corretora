@@ -5,6 +5,7 @@ export const MainComponent = styled.main`
   width: 100%;
   z-index: 0;
   position: relative;
+  margin-top: 10vh;
 
   div {
     background: linear-gradient(
@@ -30,6 +31,10 @@ export const MainComponent = styled.main`
     font-style: normal;
     font-weight: 700;
 
+    strong {
+      color: #4ca9df;
+    }
+
     ::before {
       content: "";
       width: 100px;
@@ -49,7 +54,7 @@ export const MainComponent = styled.main`
   button {
     background: var(--b2);
     font-size: var(--p2);
-    color: #e6edff; 
+    color: #ffffff;
     border-radius: 10px;
     letter-spacing: 1px;
     border: none;

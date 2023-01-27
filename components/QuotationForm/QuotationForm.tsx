@@ -10,7 +10,7 @@ interface FormData {
   example: string;
 }
 
-const Form: any = () => {
+const QuotationForm: any = () => {
   const { modalForm, setModalForm } = useContext(Contexts);
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
@@ -170,4 +170,4 @@ const Form: any = () => {
   );
 };
 
-export default Form;
+export default QuotationForm;

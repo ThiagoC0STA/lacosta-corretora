@@ -8,6 +8,7 @@ export const GlobalContext = ({ children }: any) => {
   });
   const [mobile, setMobile] = useState<any>(false);
   const [modalForm, setModalForm] = useState<boolean>(false);
+  const [contactForm, setContactForm] = useState<boolean>(false);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -25,7 +26,7 @@ export const GlobalContext = ({ children }: any) => {
   }, [mobile, width]);
 
   return (
-    <Contexts.Provider value={{ mobile, modalForm, setModalForm, width }}>
+    <Contexts.Provider value={{ mobile, modalForm, setModalForm, width, contactForm, setContactForm }}>
       {children}
     </Contexts.Provider>
   );

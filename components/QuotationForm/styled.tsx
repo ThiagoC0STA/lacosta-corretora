@@ -10,6 +10,7 @@ export const FormDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 999;
 `;
 
 export const FormComponent = styled.div`
@@ -24,9 +25,7 @@ export const FormComponent = styled.div`
   form {
     display: flex;
     flex-direction: column;
-}
+  }
 `;
 
-export const LabelsDiv = styled.div`
-  
-`
+export const LabelsDiv = styled.div``;

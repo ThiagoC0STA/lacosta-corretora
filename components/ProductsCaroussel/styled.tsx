@@ -39,6 +39,10 @@ export const Card = styled.div`
     margin: 5vh 0 11px 3vw;
     font-weight: 600;
     font-size: 1.3rem;
+
+    strong {
+      color: var(--b3);
+    }
   }
 
   p:nth-child(2) {

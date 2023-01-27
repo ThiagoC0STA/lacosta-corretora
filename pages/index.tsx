@@ -9,10 +9,11 @@ import {
   Insurers,
   Main,
   ProductsCaroussel,
+  QuotationForm,
+  ContactForm,
 } from "../components/E__export";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Form from "../components/Form/Form";
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +24,7 @@ const Home: NextPage = () => {
           name="description"
           content="A Lacosta Corretora oferece soluções personalizadas de seguros para garantir a tranquilidade de você e sua família. Entre em contato conosco e solicite agora uma cotação"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <Header />
@@ -33,7 +34,8 @@ const Home: NextPage = () => {
       <Insurers />
       <Banner />
       <Depositions />
-      <Form />
+      <QuotationForm />
+      <ContactForm />
       <Footer />
     </>
   );

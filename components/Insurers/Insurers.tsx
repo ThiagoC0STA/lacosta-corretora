@@ -79,7 +79,7 @@ const Insurers = () => {
   };
 
   return (
-    <InsurersSection className="container">
+    <InsurersSection className="container" id="insurers">
       <h3>Asseguradoras parceiras</h3>
       <p>As melhores opções para você</p>
 

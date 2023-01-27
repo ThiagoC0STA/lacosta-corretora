@@ -50,7 +50,7 @@ export const LoadingContainer = styled.div`
     font-size: 72px;
     animation: ${slideInFromLeft} 2s ease-in-out, ${fadeOut} 2.5s 4s ease-out;
     letter-spacing: 4px;
-    font-weight: bold;
+    font-weight: bold;  
     color: #fffffff6;
   }
 

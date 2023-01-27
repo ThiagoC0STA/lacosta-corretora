@@ -5,10 +5,10 @@ import { FamilyPicture } from "../E__export";
 import { FamiliarSection, Texts } from "./styled";
 
 const Familiar = () => {
-  const { setModalForm } = useContext(Contexts);
+  const { setModalForm, setContactForm } = useContext(Contexts);
 
   return (
-    <FamiliarSection className="container">
+    <FamiliarSection className="container" id="about">
       <Texts>
         <p>La Costa Corretora</p>
         <div>
@@ -23,7 +23,7 @@ const Familiar = () => {
           família
         </p>
         <div>
-          <button>Contato</button>
+          <button onClick={() => setContactForm(true)}>Contato</button>
           <button onClick={() => setModalForm(true)}>Cotação</button>
         </div>
       </Texts>
