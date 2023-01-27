@@ -49,7 +49,7 @@ export const HeaderComponent = styled.header`
     align-items: center;
     gap: 35px;
 
-    button {
+    a:last-child {
       display: flex;
       align-items: center;
       padding: 10px 20px;

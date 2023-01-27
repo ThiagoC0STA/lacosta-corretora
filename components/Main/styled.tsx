@@ -30,25 +30,13 @@ export const MainComponent = styled.main`
     color: var(--g1);
     font-style: normal;
     font-weight: 700;
-
-    strong {
-      color: #4ca9df;
-    }
-
-    ::before {
-      content: "";
-      width: 100px;
-      height: 1px;
-      background-color: var(--g1);
-      position: absolute;
-      margin: 60px 0 0 20px;
-    }
   }
 
   h2 {
     font-size: var(--p1);
     max-width: 43vw;
     font-weight: 400;
+    margin-top: -20px;
   }
 
   button {

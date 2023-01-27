@@ -1,5 +1,7 @@
+import Image from "next/image";
 import React, { useContext, useState } from "react";
 import { Contexts } from "../../contexts/GlobalContext";
+import { Quotationformimg } from "../E__export";
 import { FormComponent, FormDiv, LabelsDiv } from "./styled";
 
 interface FormData {
@@ -51,8 +53,6 @@ const QuotationForm: any = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
-            <div>
               <label htmlFor="telephone">Telefone:</label>
               <input
                 type="text"
@@ -62,8 +62,6 @@ const QuotationForm: any = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
-            <div>
               <label htmlFor="email">Email:</label>
               <input
                 type="email"
@@ -73,8 +71,6 @@ const QuotationForm: any = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
-            <div>
               <label htmlFor="city">Cidade:</label>
               <input
                 type="text"
@@ -85,9 +81,11 @@ const QuotationForm: any = () => {
                 required
               />
             </div>
-            <button type="button" onClick={() => setCurrentStep(2)}>
-              Próximo passo
-            </button>
+            <div>
+              <button style={{ width: "100%"}} type="button" onClick={() => setCurrentStep(2)}>
+                Próximo passo
+              </button>
+            </div>
           </LabelsDiv>
         );
       case 2:
@@ -128,8 +126,6 @@ const QuotationForm: any = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
-            <div>
               <label htmlFor="telephone">Telefone:</label>
               <input
                 type="text"
@@ -140,13 +136,12 @@ const QuotationForm: any = () => {
                 required
               />
             </div>
-
             <div>
               <button type="button" onClick={() => setCurrentStep(2)}>
                 Passo anterior
               </button>
               <button type="submit" onClick={() => handleSubmit}>
-                Enviar
+                Enviar cotação
               </button>
             </div>
           </LabelsDiv>
@@ -159,10 +154,17 @@ const QuotationForm: any = () => {
   return modalForm ? (
     <FormDiv className="myModal" onClick={handleCloseModal}>
       <FormComponent>
-        <div>
-          <h3>Cotação Online</h3>
-        </div>
-        <form onSubmit={handleSubmit}>{renderStep()}</form>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <h3>Cotação Online</h3>
+            <p>{currentStep}/3</p>
+            <p>Faça sua cotação <strong>gratuita!</strong></p>
+          </div>
+          {renderStep()}
+        </form>
+        <figure>
+          <Image src={Quotationformimg} alt="contato" quality={100} />
+        </figure>
       </FormComponent>
     </FormDiv>
   ) : (

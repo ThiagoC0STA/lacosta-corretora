@@ -21,21 +21,33 @@ const ContactForm = () => {
         <form>
           <h1>Entre em contato</h1>
           <p>Responderemos assim que possível</p>
-          <div>
-            <label htmlFor="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" />
-            <label htmlFor="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome" name="sobrenome" />
-            <label htmlFor="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" />
-            <label htmlFor="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
+          <div className="inputs">
+            <div>
+              <label htmlFor="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" />
+            </div>
+            <div>
+              <label htmlFor="sobrenome">Sobrenome:</label>
+              <input type="text" id="sobrenome" name="sobrenome" />
+            </div>
+            <div>
+              <label htmlFor="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" />
+            </div>
+            <div>
+              <label htmlFor="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label htmlFor="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem"></textarea>
+            </div>
           </div>
           <button type="submit">Enviar</button>
         </form>
 
         <figure>
-          <Image src={Contactformimg} alt="contato" quality={100} />
+          <Image src={Contactformimg} alt="contato" />
         </figure>
       </ContactComponent>
     </FormDiv>

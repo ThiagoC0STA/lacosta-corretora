@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Contexts } from "../../contexts/GlobalContext";
 
 const Header = () => {
-  const { mobile, setContactForm} = useContext(Contexts);
+  const { mobile, setContactForm } = useContext(Contexts);
 
   return (
     <HeaderComponent>
@@ -18,10 +18,13 @@ const Header = () => {
         <Link href="#about">Sobre nós</Link>
         <Link href="#insurers">Asseguradoras</Link>
         <a onClick={() => setContactForm(true)}>Contato</a>
-        <button>
+        <Link
+          href="https://wa.me/5541991751000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lacosta%2C%20tudo%20bem%3F"
+          target="_blank"
+        >
           <Image src={WhatsApp} alt="Whatsapp" />
           WhatsApp
-        </button>
+        </Link>
       </nav>
     </HeaderComponent>
   );

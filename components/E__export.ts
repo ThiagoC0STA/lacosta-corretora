@@ -16,6 +16,7 @@ export { default as QuotationForm } from "./QuotationForm/QuotationForm";
 export { default as MainBanner } from "/public/assets/main-banner.jpg";
 export { default as FamilyPicture } from "/public/assets/family.jpg";
 export { default as Contactformimg } from "/public/assets/contactformimg.jpg";
+export { default as Quotationformimg } from "/public/assets/quotationformimg.jpg";
 export { default as Banner2Image } from "/public/assets/banner2.jpg";
 
 export { default as WhatsApp } from "/public/assets/whatsapp.svg";
