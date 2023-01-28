@@ -5,6 +5,7 @@ export const InsurersSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin-top: 12.5em !important;
 
   h3 {
     font-style: normal;

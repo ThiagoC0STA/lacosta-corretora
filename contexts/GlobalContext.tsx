@@ -26,7 +26,16 @@ export const GlobalContext = ({ children }: any) => {
   }, [mobile, width]);
 
   return (
-    <Contexts.Provider value={{ mobile, modalForm, setModalForm, width, contactForm, setContactForm }}>
+    <Contexts.Provider
+      value={{
+        mobile,
+        modalForm,
+        setModalForm,
+        width,
+        contactForm,
+        setContactForm,
+      }}
+    >
       {children}
     </Contexts.Provider>
   );

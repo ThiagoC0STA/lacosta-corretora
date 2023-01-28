@@ -82,7 +82,11 @@ const QuotationForm: any = () => {
               />
             </div>
             <div>
-              <button style={{ width: "100%"}} type="button" onClick={() => setCurrentStep(2)}>
+              <button
+                style={{ width: "100%" }}
+                type="button"
+                onClick={() => setCurrentStep(2)}
+              >
                 Próximo passo
               </button>
             </div>
@@ -158,7 +162,9 @@ const QuotationForm: any = () => {
           <div>
             <h3>Cotação Online</h3>
             <p>{currentStep}/3</p>
-            <p>Faça sua cotação <strong>gratuita!</strong></p>
+            <p>
+              Faça sua cotação <strong>gratuita!</strong>
+            </p>
           </div>
           {renderStep()}
         </form>

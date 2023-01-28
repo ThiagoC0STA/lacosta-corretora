@@ -13,12 +13,7 @@ export const HeaderComponent = styled.header`
   padding: 0 4vw;
   background-color: #fcfcfc;
 
-  a,
-  button {
-    font-size: var(--a);
-  }
-
-  a:nth-child(1) {
+  .logo {
     h1 {
       letter-spacing: 4px;
       margin-bottom: 4vh;
@@ -38,18 +33,44 @@ export const HeaderComponent = styled.header`
     }
   }
 
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+  }
+
+  .close {
+    color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.3rem;
+  }
+
+  .mobile {
+    position: absolute;
+    color: #fff;
+    right: 0;
+    z-index: 99;
+    padding-top: 30vh;
+    top: -16px;
+    flex-direction: column;
+    width: 40vw;
+    height: 110vh;
+    background-color: #000000;
+    box-shadow: 0 10px 7px 0 #030303;
+    transition: all ease 0.4s;
+  }
+
   a {
     font-weight: 500;
     font-size: 0.9rem;
     cursor: pointer;
   }
 
-  nav {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-
-    a:last-child {
+  li:last-child {
+    a {
       display: flex;
       align-items: center;
       padding: 10px 20px;

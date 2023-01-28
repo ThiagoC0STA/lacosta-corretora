@@ -5,6 +5,7 @@ export const FamiliarSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  scroll-margin-top: 12.5em !important;
 `;
 
 export const Texts = styled.div`
