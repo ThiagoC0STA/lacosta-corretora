@@ -136,7 +136,6 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 500px) {
-
     div {
       padding: 40px 7vw;
     }
@@ -149,19 +148,16 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 430px) {
-
     h2 {
       max-width: 62vw;
     }
 
     button {
       margin-top: 10px;
-      max-width: 100px;
     }
   }
 
   @media (max-width: 360px) {
-
     h2 {
       max-width: 80vw;
     }
