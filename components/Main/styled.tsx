@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const MainComponent = styled.main`
-  height: 80vh;
+  height: 520px;
   width: 100%;
   z-index: 0;
   position: relative;
-  margin-top: 9.9vh;
+  margin-top: 63px;
 
   div {
     background: linear-gradient(
@@ -16,7 +16,7 @@ export const MainComponent = styled.main`
     );
     position: absolute;
     z-index: 0;
-    height: 80vh;
+    height: 520px;
     width: 100%;
     color: var(--g1);
     padding: 15vh 7vw;
@@ -80,10 +80,10 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 800px) {
-    height: 60vh;
+    height: 360px;
 
     div {
-      height: 60vh;
+      height: 360px;
       padding: 40px 7vw;
     }
 
@@ -117,10 +117,10 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 600px) {
-    height: 50vh;
+    height: 300px;
 
     div {
-      height: 50vh;
+      height: 300px;
       padding: 50px 7vw;
     }
 
@@ -139,10 +139,10 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 500px) {
-    height: 40vh;
+    height: 240px;
 
     div {
-      height: 40vh;
+      height: 240px;
       padding: 30px 7vw;
     }
 
@@ -162,10 +162,10 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 430px) {
-    height: 35vh;
+    height: 210px;
 
     div {
-      height: 35vh;
+      height: 210px;
     }
 
     h1 {
@@ -194,7 +194,8 @@ export const MainComponent = styled.main`
     }
 
     button {
-      font-size: 0.28rem;
+      font-size: 0.25rem;
+      max-width: 36vw;
     }
   }
 
@@ -210,7 +211,6 @@ export const MainComponent = styled.main`
 
     button {
       font-size: 0.26rem;
-      max-width: 36vw;
     }
   }
 `;

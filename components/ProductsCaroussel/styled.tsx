@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductsCarousselComponent = styled.section`
   padding: 0 4vw 0 4.8vw;
   width: 100%;
-  margin-top: -3.5vh;
+  margin-top: -20px;
 
   .slick-dots {
     bottom: -8vh;
@@ -24,13 +24,6 @@ export const Card = styled.div`
   height: 200px;
   margin-left: 2vw;
   border-radius: 8px;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-  }
 
   div {
     position: absolute;
@@ -152,10 +145,10 @@ export const Card = styled.div`
   }
 
   @media (max-width: 400px) {
-    height: 80px;
+    height: 90px;
 
     div {
-      height: 70px;
+      height: 90px;
       width: 40vw;  
 
       p:nth-child(1) {
