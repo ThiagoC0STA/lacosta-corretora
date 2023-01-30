@@ -150,14 +150,6 @@ export const Card = styled.div`
     div {
       height: 100px;
       width: 40vw;
-
-      p:nth-child(1) {
-        font-size: 0.38rem;
-      }
-
-      p:nth-child(2) {
-        font-size: 0.3rem;
-      }
     }
   }
 `;

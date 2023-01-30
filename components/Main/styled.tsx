@@ -136,19 +136,9 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 500px) {
-    height: 270px;
 
     div {
-      height: 270px;
       padding: 40px 7vw;
-    }
-
-    h1 {
-      font-size: 1.1rem;
-    }
-
-    h2 {
-      font-size: 0.5rem;
     }
 
     button {
@@ -159,43 +149,20 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 430px) {
-    h1 {
-      font-size: 0.9rem;
-    }
 
     h2 {
-      font-size: 0.45rem;
       max-width: 62vw;
     }
 
     button {
-      font-size: 0.3rem;
-      max-width: 120px;
+      margin-top: 10px;
+      max-width: 100px;
     }
   }
 
   @media (max-width: 360px) {
-    h1 {
-      font-size: 0.8rem;
-    }
 
     h2 {
-      font-size: 0.4rem;
-      max-width: 70vw;
-    }
-
-    button {
-      font-size: 0.25rem;
-    }
-  }
-
-  @media (max-width: 305px) {
-    h1 {
-      font-size: 0.75rem;
-    }
-
-    h2 {
-      font-size: 0.36rem;
       max-width: 80vw;
     }
   }
