@@ -46,7 +46,7 @@ export const MainComponent = styled.main`
     border-radius: 10px;
     letter-spacing: 1px;
     border: none;
-    max-width: 16vw;
+    max-width: 180px;
     padding: 12px;
     font-weight: 600;
     cursor: pointer;
@@ -134,16 +134,16 @@ export const MainComponent = styled.main`
 
     button {
       font-size: 0.4rem;
-      max-width: 20vw;
+      max-width: 140px;
     }
   }
 
   @media (max-width: 500px) {
-    height: 240px;
+    height: 270px;
 
     div {
-      height: 240px;
-      padding: 30px 7vw;
+      height: 270px;
+      padding: 40px 7vw;
     }
 
     h1 {
@@ -162,12 +162,6 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 430px) {
-    height: 210px;
-
-    div {
-      height: 210px;
-    }
-
     h1 {
       font-size: 0.9rem;
     }
@@ -179,7 +173,7 @@ export const MainComponent = styled.main`
 
     button {
       font-size: 0.3rem;
-      max-width: 25vw;
+      max-width: 120px;
     }
   }
 
@@ -195,7 +189,6 @@ export const MainComponent = styled.main`
 
     button {
       font-size: 0.25rem;
-      max-width: 80px;
     }
   }
 
