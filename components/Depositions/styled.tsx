@@ -106,7 +106,6 @@ export const DepoisitionsCaroussel = styled.div`
 `;
 
 export const Card = styled.div`
-  height: 70vh;
   margin-top: 20vh;
 
   .bluechat {
@@ -121,7 +120,7 @@ export const Card = styled.div`
     background-color: #fcfcfc;
     width: 24vw;
     margin-left: 2vw;
-    height: 48vh;
+    height: 310px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,10 +128,11 @@ export const Card = styled.div`
     color: var(--g10);
     padding: 0 3vw;
     text-align: center;
+    margin-bottom: 70px;
 
     figure {
-      width: 5.625vw;
-      height: 11.1vh;
+      width: 70px;
+      height: 70px;
       filter: drop-shadow(0px 2px 7px rgba(0, 0, 0, 0.24));
       position: absolute;
       margin-top: -55px;

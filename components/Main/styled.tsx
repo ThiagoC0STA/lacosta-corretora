@@ -195,7 +195,7 @@ export const MainComponent = styled.main`
 
     button {
       font-size: 0.25rem;
-      max-width: 36vw;
+      max-width: 80px;
     }
   }
 
@@ -207,10 +207,6 @@ export const MainComponent = styled.main`
     h2 {
       font-size: 0.36rem;
       max-width: 80vw;
-    }
-
-    button {
-      font-size: 0.26rem;
     }
   }
 `;
