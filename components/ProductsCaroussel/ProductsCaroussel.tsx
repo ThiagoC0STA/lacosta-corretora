@@ -18,14 +18,8 @@ const ProductsCaroussel = () => {
         breakpoint: 650,
         settings: {
           dots: false,
-        },
-      },
-      {
-        breakpoint: 400,
-        settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          dots: false,
         },
       },
     ],

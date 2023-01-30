@@ -79,7 +79,7 @@ export const Card = styled.div`
   }
 
   @media (max-width: 800px) {
-    height: 180px;
+    height: 160px;
 
     div {
       height: 150px;
@@ -95,12 +95,11 @@ export const Card = styled.div`
   }
 
   @media (max-width: 650px) {
-    height: 130px;
+    height: 150px;
 
     div {
-      height: 120px;
-      width: 27vw;
-      padding: 15px 2vw 10px 2vw;
+      height: 150px;
+      width: 40vw;
 
       p:nth-child(1) {
         font-size: 0.7rem;
@@ -113,10 +112,11 @@ export const Card = styled.div`
   }
 
   @media (max-width: 500px) {
-    height: 110px;
+    height: 120px;
 
     div {
-      height: 100px;
+      height: 120px;
+      padding: 20px 2vw 10px 2vw;
 
       p:nth-child(1) {
         font-size: 0.6rem;
