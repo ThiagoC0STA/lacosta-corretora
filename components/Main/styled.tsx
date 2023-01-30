@@ -210,7 +210,7 @@ export const MainComponent = styled.main`
 
     button {
       font-size: 0.26rem;
-      max-width: 30vw;
+      max-width: 36vw;
     }
   }
 `;

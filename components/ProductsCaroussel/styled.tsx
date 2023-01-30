@@ -156,7 +156,7 @@ export const Card = styled.div`
 
     div {
       height: 70px;
-      width: 40vw;
+      width: 40vw;  
 
       p:nth-child(1) {
         font-size: 0.38rem;
