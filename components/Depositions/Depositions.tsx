@@ -28,7 +28,7 @@ const Depositions = () => {
 
   return (
     <DepoisitionsSection className="container">
-      <h3>Depoimento de alguns de nossos clientes</h3>
+      <h3>Avaliações de clientes</h3>
       <p>Ouvindo nossos clientes e oferecendo proteção.</p>
 
       <DepoisitionsCaroussel>

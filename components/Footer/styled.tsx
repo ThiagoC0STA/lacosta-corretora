@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterComponent = styled.footer`
-  height: 15vh;
+  height: 90px;
   background-color: #e5e8ec;
   padding: 0 4vw;
   display: flex;
@@ -10,7 +10,7 @@ export const FooterComponent = styled.footer`
 
   p {
     font-weight: 300;
-    font-size: 16px;
+    font-size: 0.8rem;
     color: var(--g10);
   }
 
@@ -18,11 +18,14 @@ export const FooterComponent = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2vw;
+    gap: 10px;
 
     button {
-      width: 3rem;
-      height: 3rem;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: #757c84;
       border-radius: 4px;
       border: none;

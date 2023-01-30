@@ -17,11 +17,18 @@ const Header = () => {
         <h1>LA COSTA</h1>
         <p>CORRETORA DE SEGUROS</p>
       </Link>
-      <div>
-        <ul
-          style={active ? { right: "0" } : { right: "-50vw" }}
-          className={mobile ? "mobile" : "desktop"}
-        >
+      {mobile && (
+        <FaBars
+          style={mobile ? { display: "block" } : { display: "none" }}
+          className="bars"
+          onClick={() => setActive(!active)}
+        />
+      )}
+      <aside
+        style={active ? { right: "0" } : { right: "-65vw" }}
+        className={mobile ? "mobile" : "desktop"}
+      >
+        <nav>
           {mobile && (
             <AiOutlineCloseCircle
               className="close"
@@ -30,35 +37,20 @@ const Header = () => {
             />
           )}
 
-          <li>
-            <Link href="#about">Sobre nós</Link>
-          </li>
-          <li>
-            <Link href="#insurers">Asseguradoras</Link>
-          </li>
-          <li>
-            <Link href="/" onClick={() => setContactForm(true)}>
-              Contato
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://wa.me/5541991751000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lacosta%2C%20tudo%20bem%3F"
-              target="_blank"
-            >
-              <Image src={WhatsApp} alt="Whatsapp" />
-              WhatsApp
-            </Link>
-          </li>
-        </ul>
-        {mobile && (
-          <FaBars
-            style={mobile ? { display: "block" } : { display: "none" }}
-            className="bars"
-            onClick={() => setActive(!active)}
-          />
-        )}
-      </div>
+          <Link href="#about">Sobre nós</Link>
+          <Link href="#insurers">Asseguradoras</Link>
+          <Link href="/" onClick={() => setContactForm(true)}>
+            Contato
+          </Link>
+          <Link
+            href="https://wa.me/5541991751000?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Lacosta%2C%20tudo%20bem%3F"
+            target="_blank"
+          >
+            <Image src={WhatsApp} alt="Whatsapp" />
+            WhatsApp
+          </Link>
+        </nav>
+      </aside>
     </HeaderComponent>
   );
 };

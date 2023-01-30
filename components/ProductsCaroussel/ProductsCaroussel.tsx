@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import { Card, ProductsCarousselComponent } from "./styled";
 import { ProductsItems } from "../../utils/items";
-import Image from "next/image";
 
 const ProductsCaroussel = () => {
   const settings = {
@@ -16,10 +15,17 @@ const ProductsCaroussel = () => {
     autoplaySpeed: 4000,
     responsive: [
       {
-        breakpoint: 900,
+        breakpoint: 650,
+        settings: {
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 300,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          dots: false,
         },
       },
     ],
@@ -27,11 +33,14 @@ const ProductsCaroussel = () => {
   return (
     <ProductsCarousselComponent id="products">
       <Slider {...settings}>
-        {ProductsItems.map(({ id, name, description, img, alt }) => (
+        {ProductsItems.map(({ id, name, description }) => (
           <div key={id}>
             <Card>
               <div>
-                <p>{name}<strong>.</strong></p>
+                <p>
+                  {name}
+                  <strong>.</strong>
+                </p>
                 <p>{description}</p>
               </div>
             </Card>

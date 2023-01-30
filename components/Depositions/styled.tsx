@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DepoisitionsSection = styled.section`
-  margin-top: 20vh;
+  margin-top: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,10 +22,82 @@ export const DepoisitionsSection = styled.section`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: var(--g10);
     font-weight: 300;
-    margin-top: -4vh;
+    margin-top: -35px;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 20vh;
+
+    h3 {
+      font-size: 2.2rem;
+
+      ::before {
+        display: none;
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 10vh;
+
+    h3 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-size: 0.7rem;
+      margin-top: -30px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    h3 {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 0.6rem;
+      margin-top: -25px;
+    }
+  }
+
+  @media (max-width: 420px) {
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 0.55rem;
+    }
+  }
+
+  @media (max-width: 330px) {
+    h3 {
+      font-size: 1rem;
+    }
+
+    p {
+      font-size: 0.45rem;
+      margin-top: -15px;
+    }
+  }
+
+  @media (max-width: 250px) {
+    h3 {
+      font-size: 0.9rem;
+    }
+
+    p {
+      font-size: 0.45rem;
+      margin-top: -15px;
+    }
   }
 `;
 
@@ -63,7 +135,7 @@ export const Card = styled.div`
       height: 11.1vh;
       filter: drop-shadow(0px 2px 7px rgba(0, 0, 0, 0.24));
       position: absolute;
-      margin-top: -7vh;
+      margin-top: -55px;
 
       img {
         width: 100%;
@@ -74,21 +146,21 @@ export const Card = styled.div`
     }
 
     h4 {
-      margin-top: 10vh;
+      margin-top: 40px;
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     h5 {
       font-weight: 300;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
       color: var(--g10);
-      margin: -3.2vh 0 9vh 0;
+      margin: -20px 0 80px 0;
     }
 
     p {
       font-weight: 300;
-      font-size: 0.88rem;
+      font-size: 0.75rem;
     }
   }
 `;

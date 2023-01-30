@@ -20,10 +20,9 @@ const Main = () => {
         <h2>
           A La costa oferece uma variedade de opções de seguros para atender às
           suas necessidades. Nossa equipe está pronta para ajudá-lo a encontrar
-          a melhor cobertura. Entre em contato conosco para saber mais ou
-          solicite uma cotação.
+          a melhor cobertura.
         </h2>
-        <button onClick={() => setModalForm(true)}>COTAÇÃO GRATUITA</button>
+        <button onClick={() => setModalForm(true)}>Cotação Gratuita</button>
       </div>
     </MainComponent>
   );

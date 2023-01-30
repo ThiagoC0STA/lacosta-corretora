@@ -5,7 +5,7 @@ import { FamilyPicture } from "../E__export";
 import { FamiliarSection, Texts } from "./styled";
 
 const Familiar = () => {
-  const { setModalForm, setContactForm } = useContext(Contexts);
+  const { setModalForm, setContactForm, mobile } = useContext(Contexts);
 
   return (
     <FamiliarSection className="container" id="about">
@@ -13,14 +13,13 @@ const Familiar = () => {
         <p>La Costa Corretora</p>
         <div>
           <h3>Uma empresa</h3>
-          <h3>familiar</h3>
+          <h3>familiar.</h3>
         </div>
         <p>
           A Corretora de Seguros La costa oferece opções de seguros para
           proteger sua família. Nossa equipe de especialistas está pronta para
-          ajudá-lo a encontrar a melhor solução. Oferecemos cotações gratuitas e
-          recursos educacionais. Entre em contato conosco hoje e proteja sua
-          família
+          ajudá-lo a encontrar a melhor solução. Entre em contato conosco hoje e
+          proteja sua família
         </p>
         <div>
           <button onClick={() => setContactForm(true)}>Contato</button>
@@ -28,9 +27,13 @@ const Familiar = () => {
         </div>
       </Texts>
 
-      <figure>
-        <Image src={FamilyPicture} alt="familia unida" quality={100} />
-      </figure>
+      {mobile ? (
+        <></>
+      ) : (
+        <figure>
+          <Image src={FamilyPicture} alt="familia unida" />
+        </figure>
+      )}
     </FamiliarSection>
   );
 };

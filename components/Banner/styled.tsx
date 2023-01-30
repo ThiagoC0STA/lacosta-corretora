@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BannerComponent = styled.section`
-  margin-top: 20vh;
+  margin-top: 25vh;
 
   img {
     width: 100%;
@@ -17,29 +17,29 @@ export const BannerComponent = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    padding-top: 5vh;
+    justify-content: center;
     color: var(--g10);
 
     h3 {
-      font-weight: 600;
-      font-size: 2rem;
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin: 0;
     }
 
     p {
       font-weight: 400;
-      font-size: 1rem;
-      max-width: 40vw;
+      font-size: 0.8rem;
+      max-width: 38vw;
       text-align: center;
     }
 
     button {
       background: var(--b3);
       border-radius: 8px;
-      padding: 1.9vh 6.25vw;
+      padding: 10px 50px;
       margin-top: 6vh;
       font-weight: 600;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       color: var(--g1);
       border: 2px solid var(--b3);
       cursor: pointer;

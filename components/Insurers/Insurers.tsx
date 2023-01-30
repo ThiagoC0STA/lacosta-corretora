@@ -71,8 +71,20 @@ const Insurers = () => {
       {
         breakpoint: 900,
         settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 730,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          arrows: false,
         },
       },
     ],
@@ -88,7 +100,7 @@ const Insurers = () => {
           {InsurerItems.map(({ id, img, alt }) => (
             <div key={id}>
               <figure>
-                <Image src={img} alt={alt} quality={100} />
+                <Image src={img} alt={alt} />
               </figure>
             </div>
           ))}

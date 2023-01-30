@@ -11,7 +11,7 @@ const Banner = () => {
   return (
     <BannerComponent>
       <div>
-        <h3>Clientes satisfeitos, é nossa prioridade</h3>
+        <h3>Clientes satisfeitos é nossa prioridade</h3>
         <p>
           Entendemos que cada cliente tem necessidades únicas, e nos esforçamos
           para atender essas necessidades, ajudando encontrar a melhor solução
