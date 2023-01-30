@@ -151,23 +151,7 @@ export const Card = styled.div`
     }
   }
 
-  @media (max-width: 350px) {
-    height: 80px;
-
-    div {
-      height: 70px;
-
-      p:nth-child(1) {
-        font-size: 0.38rem;
-      }
-
-      p:nth-child(2) {
-        font-size: 0.3rem;
-      }
-    }
-  }
-
-  @media (max-width: 300px) {
+  @media (max-width: 400px) {
     height: 80px;
 
     div {

@@ -21,7 +21,7 @@ const ProductsCaroussel = () => {
         },
       },
       {
-        breakpoint: 300,
+        breakpoint: 400,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
