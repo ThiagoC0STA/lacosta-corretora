@@ -117,10 +117,7 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 600px) {
-    height: 300px;
-
     div {
-      height: 300px;
       padding: 50px 7vw;
     }
 
