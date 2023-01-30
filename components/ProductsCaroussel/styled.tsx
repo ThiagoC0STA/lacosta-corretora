@@ -145,11 +145,11 @@ export const Card = styled.div`
   }
 
   @media (max-width: 400px) {
-    height: 90px;
+    height: 110px;
 
     div {
-      height: 90px;
-      width: 40vw;  
+      height: 100px;
+      width: 40vw;
 
       p:nth-child(1) {
         font-size: 0.38rem;
