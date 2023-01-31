@@ -58,7 +58,7 @@ export const BannerComponent = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-top: 70px;
+    margin-top: 130px;
 
     img,
     div {

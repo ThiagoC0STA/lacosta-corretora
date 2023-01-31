@@ -23,7 +23,7 @@ export const FamiliarSection = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-top: 60px;
+    margin-top: 80px;
   }
 `;
 
