@@ -25,10 +25,6 @@ export const FamiliarSection = styled.section`
   @media (max-width: 600px) {
     margin-top: 60px;
   }
-
-  @media (max-width: 300px) {
-    margin-top: 40px;
-  }
 `;
 
 export const Texts = styled.div`

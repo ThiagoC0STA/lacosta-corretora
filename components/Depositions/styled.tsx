@@ -89,10 +89,6 @@ export const DepoisitionsSection = styled.section`
     }
   }
 
-  @media (max-width: 300px) {
-    margin-top: 50px;
-  }
-
   @media (max-width: 250px) {
     h3 {
       font-size: 0.9rem;
