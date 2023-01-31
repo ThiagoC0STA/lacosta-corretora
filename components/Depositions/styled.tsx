@@ -204,6 +204,8 @@ export const Card = styled.div`
   }
 
   @media (max-width: 500px) {
+    margin-top: 70px;
+
     .bluechat {
       margin-left: -82vw;
     }
@@ -211,6 +213,7 @@ export const Card = styled.div`
     div {
       height: 250px;
       width: 82vw;
+      margin-bottom: 30px;
     }
   }
 
@@ -245,8 +248,6 @@ export const Card = styled.div`
   }
 
   @media (max-width: 300px) {
-    margin-top: 70px;
-
     .bluechat {
       margin-left: -80vw;
       width: 22px;

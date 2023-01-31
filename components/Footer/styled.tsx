@@ -37,4 +37,64 @@ export const FooterComponent = styled.footer`
       }
     }
   }
+
+  @media (max-width: 500px) {
+    p {
+      font-size: 0.6rem;
+    }
+
+    div {
+      button {
+        width: 30px;
+        height: 30px;
+
+        img {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 390px) {
+    height: 70px;
+
+    p {
+      font-size: 0.5rem;
+    }
+
+    div {
+      gap: 6px;
+
+      button {
+        width: 25px;
+        height: 25px;
+
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 320px) {
+    p {
+      font-size: 0.45rem;
+    }
+
+    div {
+      gap: 6px;
+
+      button {
+        width: 20px;
+        height: 20px;
+
+        img {
+          width: 8px;
+          height: 8px;
+        }
+      }
+    }
+  }
 `;
