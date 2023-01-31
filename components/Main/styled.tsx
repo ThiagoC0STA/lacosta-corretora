@@ -26,10 +26,10 @@ export const MainComponent = styled.main`
   }
 
   h1 {
-    font-size: 2rem;
-    color: var(--g1);
+    font-size: 2.4rem;
+    color: #ffffff;
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
   }
 
   h2 {
@@ -40,7 +40,7 @@ export const MainComponent = styled.main`
   }
 
   button {
-    background: var(--b2);
+    background: var(--b1);
     font-size: 0.7rem;
     color: #ffffff;
     border-radius: 10px;
@@ -66,12 +66,12 @@ export const MainComponent = styled.main`
 
   @media (max-width: 900px) {
     h1 {
-      font-size: 1.8rem;
+      font-size: 2.2rem;
     }
 
     h2 {
-      font-size: 0.75rem;
-      max-width: 60vw;
+      font-size: 0.8rem;
+      max-width: 70vw;
     }
 
     button {
@@ -88,7 +88,7 @@ export const MainComponent = styled.main`
     }
 
     h1 {
-      font-size: 1.7rem;
+      font-size: 1.9rem;
     }
 
     h2 {
@@ -103,7 +103,7 @@ export const MainComponent = styled.main`
 
   @media (max-width: 700px) {
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
     }
 
     h2 {
@@ -113,6 +113,7 @@ export const MainComponent = styled.main`
 
     button {
       font-size: 0.4rem;
+      max-width: 140px;
     }
   }
 
@@ -122,7 +123,8 @@ export const MainComponent = styled.main`
     }
 
     h1 {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
+      margin-top: 30px;
     }
 
     h2 {
@@ -130,36 +132,61 @@ export const MainComponent = styled.main`
     }
 
     button {
-      font-size: 0.4rem;
-      max-width: 140px;
+      font-size: 0.45rem;
     }
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 530px) {
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    h2 {
+      max-width: 90vw;
+    }
+
     div {
       padding: 40px 7vw;
     }
 
     button {
-      font-size: 0.35rem;
       padding: 8px;
       border-radius: 5px;
     }
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 1.3rem;
+    }
+
     h2 {
-      max-width: 62vw;
+      font-size: 0.55rem;
     }
 
     button {
-      margin-top: 10px;
+      margin-top: 5px;
     }
   }
 
-  @media (max-width: 360px) {
+  @media (max-width: 425px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
     h2 {
-      max-width: 80vw;
+      font-size: 0.5rem;
     }
   }
+
+  @media (max-width: 400px) {
+    h1 {
+      font-size: 1.1rem;
+    }
+
+    h2 {
+      font-size: 0.5rem;
+    }
+  }
+
 `;

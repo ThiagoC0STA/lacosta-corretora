@@ -54,8 +54,8 @@ export const HeaderComponent = styled.header`
     .close {
       color: #fff;
       position: absolute;
-      right: 2.5vw;
-      top: 7vh;
+      right: 20px;
+      top: 40px;
       font-size: 1.5rem;
     }
 

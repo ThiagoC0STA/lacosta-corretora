@@ -16,11 +16,11 @@ const Main = () => {
         priority={true}
       />
       <div>
-        <h1>La costa corretora <strong> seguros e consórcios</strong></h1>
+        <h1>Corretora de seguros e consorcios </h1>
         <h2>
-          A La costa oferece uma variedade de opções de seguros para atender às
-          suas necessidades. Nossa equipe está pronta para ajudá-lo a encontrar
-          a melhor cobertura.
+          A La costa oferece uma variedade de opções de seguros e consórcios
+          para atender às suas necessidades. Nossa equipe está pronta para
+          ajudá-lo a encontrar a melhor cobertura.
         </h2>
         <button onClick={() => setModalForm(true)}>Cotação Gratuita</button>
       </div>
