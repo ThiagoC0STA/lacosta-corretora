@@ -18,6 +18,10 @@ export const ProductsCarousselComponent = styled.section`
       font-size: 5px;
     }
   }
+
+  @media (max-width: 460px) {
+    margin-top: -30px;
+  }
 `;
 
 export const Card = styled.div`

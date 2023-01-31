@@ -165,7 +165,7 @@ export const MainComponent = styled.main`
 
     h1 {
       font-size: 1.3rem;
-      margin-top: 0;
+      margin-top: 10px;
     }
 
     h2 {
