@@ -29,7 +29,7 @@ export const DepoisitionsSection = styled.section`
   }
 
   @media (max-width: 800px) {
-    margin-top: 20vh;
+    margin-top: 170px;
 
     h3 {
       font-size: 2.2rem;
@@ -45,7 +45,7 @@ export const DepoisitionsSection = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-top: 10vh;
+    margin-top: 100px;
 
     h3 {
       font-size: 1.8rem;
@@ -89,6 +89,10 @@ export const DepoisitionsSection = styled.section`
     }
   }
 
+  @media (max-width: 300px) {
+    margin-top: 70px;
+  }
+
   @media (max-width: 250px) {
     h3 {
       font-size: 0.9rem;
@@ -115,7 +119,7 @@ export const Card = styled.div`
   }
 
   div {
-    box-shadow: 0px 3px 7px rgba(33, 37, 41, 0.16);
+    box-shadow: 0px 2px 5px rgba(33, 37, 41, 0.16);
     border-radius: 8px;
     background-color: #fcfcfc;
     width: 24vw;
@@ -161,6 +165,114 @@ export const Card = styled.div`
     p {
       font-weight: 300;
       font-size: 0.75rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    div {
+      width: 40vw;
+    }
+
+    .bluechat {
+      margin-left: -40vw;
+    }
+  }
+
+  @media (max-width: 600px) {
+    div {
+      margin-left: 13px;
+      height: 250px;
+
+      figure {
+        width: 60px;
+        height: 60px;
+        margin-top: -45px;
+      }
+      h4 {
+        font-size: 0.8rem;
+      }
+
+      h5 {
+        font-size: 0.6rem;
+        margin: -17px 0 50px 0;
+      }
+
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .bluechat {
+      margin-left: -82vw;
+    }
+
+    div {
+      height: 250px;
+      width: 82vw;
+    }
+  }
+
+  @media (max-width: 330px) {
+    .bluechat {
+      margin-left: -60vw;
+      width: 22px;
+    }
+
+    div {
+      width: 60vw;
+      margin-left: 45px;
+
+      figure {
+        width: 50px;
+        height: 50px;
+        margin-top: -35px;
+      }
+      h4 {
+        font-size: 0.7rem;
+      }
+
+      h5 {
+        font-size: 0.5rem;
+        margin: -17px 0 50px 0;
+      }
+
+      p {
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 300px) {
+    margin-top: 70px;
+
+    .bluechat {
+      margin-left: -80vw;
+      width: 22px;
+    }
+
+    div {
+      width: 80vw;
+      margin-left: 10px;
+
+      figure {
+        width: 50px;
+        height: 50px;
+        margin-top: -35px;
+      }
+      h4 {
+        font-size: 0.7rem;
+      }
+
+      h5 {
+        font-size: 0.5rem;
+        margin: -17px 0 50px 0;
+      }
+
+      p {
+        font-size: 0.5rem;
+      }
     }
   }
 `;
