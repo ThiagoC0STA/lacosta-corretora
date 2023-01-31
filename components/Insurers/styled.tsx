@@ -63,6 +63,14 @@ export const InsurersSection = styled.section`
       font-size: 1.6rem;
     }
 
+    .slick-dots li button:before {
+      font-size: 4px;
+    }
+
+    .slick-dots li button, .slick-dots li {
+      width: 15px;
+    }
+
     p {
       font-size: 0.6rem;
       margin-top: -25px;

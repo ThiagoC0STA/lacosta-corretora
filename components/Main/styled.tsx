@@ -156,8 +156,16 @@ export const MainComponent = styled.main`
   }
 
   @media (max-width: 460px) {
+    height: 300px;
+
+    div {
+      height: 300px;
+      padding: 40px 7vw;
+    }
+
     h1 {
       font-size: 1.3rem;
+      margin-top: 0;
     }
 
     h2 {
@@ -188,5 +196,4 @@ export const MainComponent = styled.main`
       font-size: 0.5rem;
     }
   }
-
 `;

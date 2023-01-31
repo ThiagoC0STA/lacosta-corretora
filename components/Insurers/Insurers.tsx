@@ -85,6 +85,7 @@ const Insurers = () => {
         settings: {
           slidesToShow: 3,
           arrows: false,
+          dots: true,
         },
       },
     ],
