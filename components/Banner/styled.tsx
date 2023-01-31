@@ -58,7 +58,7 @@ export const BannerComponent = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-top: 100px;
+    margin-top: 70px;
 
     img,
     div {
@@ -129,7 +129,7 @@ export const BannerComponent = styled.section`
   }
 
   @media (max-width: 300px) {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 
   @media (max-width: 280px) {

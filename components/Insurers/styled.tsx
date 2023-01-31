@@ -46,7 +46,7 @@ export const InsurersSection = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-top: 100px;
+    margin-top: 70px;
 
     h3 {
       font-size: 1.8rem;
@@ -64,11 +64,12 @@ export const InsurersSection = styled.section`
     }
 
     .slick-dots li button:before {
-      font-size: 4px;
+      font-size: 5px;
     }
 
-    .slick-dots li button, .slick-dots li {
-      width: 15px;
+    .slick-dots li button,
+    .slick-dots li {
+      width: 17px;
     }
 
     p {
@@ -99,7 +100,7 @@ export const InsurersSection = styled.section`
   }
 
   @media (max-width: 300px) {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   @media (max-width: 250px) {

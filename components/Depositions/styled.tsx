@@ -45,7 +45,7 @@ export const DepoisitionsSection = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-top: 100px;
+    margin-top: 70px;
 
     h3 {
       font-size: 1.8rem;
@@ -90,7 +90,7 @@ export const DepoisitionsSection = styled.section`
   }
 
   @media (max-width: 300px) {
-    margin-top: 70px;
+    margin-top: 50px;
   }
 
   @media (max-width: 250px) {
