@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProductsCarousselComponent = styled.section`
   padding: 0 4vw 0 4.8vw;
   width: 100%;
-  margin-top: -20px;
+  margin-top: -40px;
 
   .slick-dots {
     bottom: -8vh;

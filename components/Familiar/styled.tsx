@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FamiliarSection = styled.section`
-  margin-top: 30vh;
+  margin-top: 230px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,11 +19,15 @@ export const FamiliarSection = styled.section`
   }
 
   @media (max-width: 800px) {
-    margin-top: 20vh;
+    margin-top: 170px;
   }
 
   @media (max-width: 600px) {
-    margin-top: 10vh;
+    margin-top: 100px;
+  }
+
+  @media (max-width: 300px) {
+    margin-top: 70px;
   }
 `;
 

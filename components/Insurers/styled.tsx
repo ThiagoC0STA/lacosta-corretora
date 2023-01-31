@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const InsurersSection = styled.section`
-  margin-top: 25vh;
+  margin-top: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@ export const InsurersSection = styled.section`
   }
 
   @media (max-width: 800px) {
-    margin-top: 20vh;
+    margin-top: 170px;
 
     h3 {
       font-size: 2.2rem;
@@ -46,7 +46,7 @@ export const InsurersSection = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-top: 10vh;
+    margin-top: 100px;
 
     h3 {
       font-size: 1.8rem;
@@ -88,6 +88,10 @@ export const InsurersSection = styled.section`
       font-size: 0.45rem;
       margin-top: -15px;
     }
+  }
+
+  @media (max-width: 300px) {
+    margin-top: 70px;
   }
 
   @media (max-width: 250px) {

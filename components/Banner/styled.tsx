@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const BannerComponent = styled.section`
-  margin-top: 25vh;
+  margin-top: 230px;
 
   img {
     width: 100%;
@@ -49,6 +49,109 @@ export const BannerComponent = styled.section`
         background-color: transparent;
         color: var(--b7);
         border: 2px solid var(--b7);
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 170px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 100px;
+
+    img,
+    div {
+      height: 300px;
+    }
+
+    div {
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: .6rem;
+        max-width: 80vw;
+      }
+
+      button {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    img,
+    div {
+      height: 200px;
+    }
+
+    div {
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: .5rem;
+        max-width: 90vw;
+      }
+
+      button {
+        font-size: 0.5rem;
+        padding: 6px 40px;
+      }
+    }
+  }
+
+  @media (max-width: 350px) {
+    img,
+    div {
+      height: 170px;
+    }
+
+    div {
+      h3 {
+        font-size: 0.8rem;
+      }
+
+      p {
+        font-size: .5rem;
+        max-width: 95vw;
+      }
+
+      button {
+        margin-top: 5px;
+        font-size: 0.4rem;
+        padding: 5px 30px;
+      }
+    }
+  }
+
+  @media (max-width: 300px) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: 280px) {
+    img,
+    div {
+      height: 140px;
+    }
+
+    div {
+      h3 {
+        font-size: 0.7rem;
+      }
+
+      p {
+        font-size: .42rem;
+        max-width: 97vw;
+      }
+
+      button {
+        margin-top: 7px;
+        font-size: 0.35rem;
+        padding: 5px 30px;
       }
     }
   }
