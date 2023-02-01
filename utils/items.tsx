@@ -1,4 +1,6 @@
-import Exemplo from "/public/assets/products/exemplo.jpg";
+import Auto from "/public/assets/products/auto.jpg";
+import Health from "/public/assets/products/health.jpg";
+import Residence from "/public/assets/products/residence.jpg";
 import Exemplo2 from "/public/assets/insurers/hdi.png";
 import Person1 from "/public/assets/persons/person1.jpg";
 
@@ -8,7 +10,7 @@ export const ProductsItems = [
     name: "Seguro Residencial",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Residence,
     alt: "",
   },
   {
@@ -16,7 +18,7 @@ export const ProductsItems = [
     name: "Seguro auto",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Auto,
     alt: "",
   },
   {
@@ -24,7 +26,7 @@ export const ProductsItems = [
     name: "Seguro de vida",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Health,
     alt: "",
   },
   {
@@ -32,7 +34,7 @@ export const ProductsItems = [
     name: "Seguro Residencial",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Residence,
     alt: "",
   },
   {
@@ -40,7 +42,7 @@ export const ProductsItems = [
     name: "Seguro auto",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Auto,
     alt: "",
   },
   {
@@ -48,7 +50,7 @@ export const ProductsItems = [
     name: "Seguro de vida",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Health,
     alt: "",
   },
   {
@@ -56,7 +58,7 @@ export const ProductsItems = [
     name: "Seguro Residencial",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Residence,
     alt: "",
   },
   {
@@ -64,7 +66,7 @@ export const ProductsItems = [
     name: "Seguro auto",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Auto,
     alt: "",
   },
   {
@@ -72,7 +74,7 @@ export const ProductsItems = [
     name: "Seguro de vida",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non dolor lectus.",
-    img: Exemplo,
+    img: Health,
     alt: "",
   },
 ];
