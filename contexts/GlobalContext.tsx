@@ -9,6 +9,13 @@ export const GlobalContext = ({ children }: any) => {
   const [mobile, setMobile] = useState<any>(false);
   const [modalForm, setModalForm] = useState<boolean>(false);
   const [contactForm, setContactForm] = useState<boolean>(false);
+  const [activeAside, setActiveAside] = useState(false);
+
+  useEffect(() => {
+    if (modalForm || contactForm === true) {
+      setActiveAside(false);
+    }
+  }, [contactForm, modalForm]);
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
@@ -34,6 +41,8 @@ export const GlobalContext = ({ children }: any) => {
         width,
         contactForm,
         setContactForm,
+        setActiveAside,
+        activeAside,
       }}
     >
       {children}

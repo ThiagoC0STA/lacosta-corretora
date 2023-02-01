@@ -8,8 +8,8 @@ import { FaBars } from "react-icons/fa";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Header = () => {
-  const { mobile, setContactForm } = useContext(Contexts);
-  const [active, setActive] = useState(false);
+  const { mobile, setContactForm, setActiveAside, activeAside } =
+    useContext(Contexts);
 
   return (
     <HeaderComponent>
@@ -21,11 +21,11 @@ const Header = () => {
         <FaBars
           style={mobile ? { display: "block" } : { display: "none" }}
           className="bars"
-          onClick={() => setActive(!active)}
+          onClick={() => setActiveAside(!activeAside)}
         />
       )}
       <aside
-        style={active ? { right: "0" } : { right: "-65vw" }}
+        style={activeAside ? { right: "0" } : { right: "-65vw" }}
         className={mobile ? "mobile" : "desktop"}
       >
         <nav>
@@ -33,7 +33,7 @@ const Header = () => {
             <AiOutlineCloseCircle
               className="close"
               style={mobile ? { display: "block" } : { display: "none" }}
-              onClick={() => setActive(!active)}
+              onClick={() => setActiveAside(!activeAside)}
             />
           )}
 

@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Contactformimg } from "../E__export";
 
 const ContactForm = () => {
-  const { setContactForm, contactForm } = useContext(Contexts);
+  const { setContactForm, contactForm, mobile } = useContext(Contexts);
 
   const handleCloseModal = (event: any) => {
     if (event.target.classList.contains("myModal")) {
@@ -38,17 +38,20 @@ const ContactForm = () => {
               <label htmlFor="email">Email:</label>
               <input type="email" id="email" name="email" />
             </div>
-            <div>
+            <div className="bigbox">
               <label htmlFor="mensagem">Mensagem:</label>
               <textarea id="mensagem" name="mensagem"></textarea>
             </div>
-          </div>
           <button type="submit">Enviar</button>
+          </div>
         </form>
-
-        <figure>
-          <Image src={Contactformimg} alt="contato" priority={true} />
-        </figure>
+        {mobile ? (
+          <div></div>
+        ) : (
+          <figure>
+            <Image src={Contactformimg} alt="contato" priority={true} />
+          </figure>
+        )}
       </ContactComponent>
     </FormDiv>
   ) : (
