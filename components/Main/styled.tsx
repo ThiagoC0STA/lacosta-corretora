@@ -10,9 +10,9 @@ export const MainComponent = styled.main`
   div {
     background: linear-gradient(
       90deg,
-      rgba(24, 49, 69, 0.6) 0%,
-      rgba(24, 49, 69, 0.55) 65%,
-      rgba(24, 49, 69, 0.25) 100%
+      rgba(2, 29, 53, 0.65) 0%,
+      rgba(2, 29, 53, 0.6) 65%,
+      rgba(2, 29, 53, 0.3) 100%
     );
     position: absolute;
     z-index: 0;

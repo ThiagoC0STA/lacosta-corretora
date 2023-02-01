@@ -55,7 +55,7 @@ export const Card = styled.div`
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    background: rgba(0, 28, 56, 0.8);
+    background: rgba(0, 18, 35, 0.8);
     box-shadow: 0px 4px 5px rgba(0, 24, 48, 0.341);
     border-radius: 8px;
 
