@@ -114,7 +114,7 @@ export const LoadingContainer = styled.div`
       margin: 110px 0 0 220px;
     }
   }
-  
+
   @media (max-width: 280px) {
     h1 {
       font-size: 35px;

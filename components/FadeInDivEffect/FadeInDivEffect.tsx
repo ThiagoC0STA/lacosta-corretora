@@ -6,7 +6,7 @@ interface Props {
   className?: string;
 }
 
-const FadeIn: React.FC<Props> = ({ children, className = "" }) => {
+const FadeIn: React.FC<Props> = ({ children }) => {
   const [show, setShow] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -29,7 +29,7 @@ const FadeIn: React.FC<Props> = ({ children, className = "" }) => {
   }, []);
 
   return (
-    <FadeInDiv ref={ref} className={`fade-in ${className}`} show={show}>
+    <FadeInDiv ref={ref} className="fade-in" show={show}>
       {children}
     </FadeInDiv>
   );
