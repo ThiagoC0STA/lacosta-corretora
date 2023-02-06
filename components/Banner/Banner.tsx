@@ -1,12 +1,12 @@
 import Image from "next/image";
-import React from "react";
 import { useContext } from "react";
-import { Contexts } from "../../contexts/GlobalContext";
+import { ContextProps, Contexts } from "../../contexts/GlobalContext";
 import { Banner2Image } from "../E__export";
 import { BannerComponent } from "./styled";
 
-const Banner = () => {
-  const { setModalForm } = useContext(Contexts);
+const Banner: React.FC = () => {
+  const context = useContext(Contexts) as ContextProps;
+  const { setModalForm } = context;
 
   return (
     <BannerComponent>

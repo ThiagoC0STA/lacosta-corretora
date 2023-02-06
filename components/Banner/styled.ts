@@ -71,7 +71,7 @@ export const BannerComponent = styled.section`
       }
 
       p {
-        font-size: .6rem;
+        font-size: 0.6rem;
         max-width: 80vw;
       }
 
@@ -93,7 +93,7 @@ export const BannerComponent = styled.section`
       }
 
       p {
-        font-size: .5rem;
+        font-size: 0.5rem;
         max-width: 90vw;
       }
 
@@ -116,7 +116,7 @@ export const BannerComponent = styled.section`
       }
 
       p {
-        font-size: .5rem;
+        font-size: 0.5rem;
         max-width: 95vw;
       }
 
@@ -140,7 +140,7 @@ export const BannerComponent = styled.section`
       }
 
       p {
-        font-size: .42rem;
+        font-size: 0.42rem;
         max-width: 97vw;
       }
 

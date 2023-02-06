@@ -1,16 +1,16 @@
-import React from "react";
 import { useContext } from "react";
 import { FormDiv } from "../QuotationForm/styled";
 import { ContactComponent } from "./styled";
-import { Contexts } from "../../contexts/GlobalContext";
+import { Contexts, ContextProps } from "../../contexts/GlobalContext";
 import Image from "next/image";
 import { Contactformimg } from "../E__export";
 
 const ContactForm = () => {
-  const { setContactForm, contactForm, mobile } = useContext(Contexts);
+  const context = useContext(Contexts) as ContextProps;
+  const { setContactForm, contactForm, mobile } = context;
 
-  const handleCloseModal = (event: any) => {
-    if (event.target.classList.contains("myModal")) {
+  const handleCloseModal = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (event.currentTarget.classList.contains("myModal")) {
       setContactForm(false);
     }
   };
@@ -42,7 +42,7 @@ const ContactForm = () => {
               <label htmlFor="mensagem">Mensagem:</label>
               <textarea id="mensagem" name="mensagem"></textarea>
             </div>
-          <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
           </div>
         </form>
         {mobile ? (

@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { GlobalContext } from "../contexts/GlobalContext";
 import LoadingAnimation from "../components/LoadingAnimation/LoadingAnimation";
+import GlobalContext from "../contexts/GlobalContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

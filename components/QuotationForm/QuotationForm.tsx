@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useContext, useState } from "react";
-import { Contexts } from "../../contexts/GlobalContext";
+import { ContextProps, Contexts } from "../../contexts/GlobalContext";
 import { Quotationformimg } from "../E__export";
 import { FormComponent, FormDiv, LabelsDiv } from "./styled";
 
@@ -13,7 +13,9 @@ interface FormData {
 }
 
 const QuotationForm: any = () => {
-  const { modalForm, setModalForm } = useContext(Contexts);
+  const context = useContext(Contexts) as ContextProps;
+  const { modalForm, setModalForm } = context;
+
   const [currentStep, setCurrentStep] = useState(1);
   const [formData, setFormData] = useState<FormData>({
     name: "",

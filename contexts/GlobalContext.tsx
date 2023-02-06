@@ -1,14 +1,29 @@
 import React, { createContext, useEffect, useState } from "react";
 
-export const Contexts = createContext<any | null>(null);
+export type ContextProps = {
+  mobile: boolean;
+  modalForm: boolean;
+  setModalForm: React.Dispatch<React.SetStateAction<boolean>>;
+  width: number;
+  contactForm: boolean;
+  setContactForm: React.Dispatch<React.SetStateAction<boolean>>;
+  setActiveAside: React.Dispatch<React.SetStateAction<boolean>>;
+  activeAside: boolean;
+}
 
-export const GlobalContext = ({ children }: any) => {
-  const [width, setWidth] = useState<Number>(() => {
+export const Contexts = createContext<ContextProps | null>(null);
+
+interface Props {
+  children: React.ReactNode;
+}
+
+const GlobalContext: React.FC<Props> = ({ children }) => {
+  const [width, setWidth] = useState(() => {
     return typeof window !== "undefined" ? window.innerWidth : 0;
   });
-  const [mobile, setMobile] = useState<any>(false);
-  const [modalForm, setModalForm] = useState<boolean>(false);
-  const [contactForm, setContactForm] = useState<boolean>(false);
+  const [mobile, setMobile] = useState(false);
+  const [modalForm, setModalForm] = useState(false);
+  const [contactForm, setContactForm] = useState(false);
   const [activeAside, setActiveAside] = useState(false);
 
   useEffect(() => {
@@ -49,3 +64,5 @@ export const GlobalContext = ({ children }: any) => {
     </Contexts.Provider>
   );
 };
+
+export default GlobalContext;

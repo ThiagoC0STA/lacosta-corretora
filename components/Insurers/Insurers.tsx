@@ -1,48 +1,42 @@
-import React from "react";
 import { InsurersCaroussel, InsurersSection } from "./styled";
 import Slider from "react-slick";
 import { InsurerItems } from "../../utils/items";
 import Image from "next/image";
 import { LeftArrow, RightArrow } from "../E__export";
+import FadeIn from "../FadeInDivEffect/FadeInDivEffect";
 
 const Insurers = () => {
-  function SampleNextArrow(props: {
-    className: any;
-    style: any;
-    onClick: any;
-  }) {
-    const { className, style, onClick } = props;
-    return (
-      <Image
-        src={RightArrow}
-        alt=">"
-        className={className}
-        onClick={onClick}
-        height={21}
-        width={12}
-        style={style}
-      />
-    );
-  }
+  const NextArrow: React.FC<{
+    className?: string;
+    style?: React.CSSProperties;
+    onClick?: () => void;
+  }> = ({ className = "", style = {}, onClick = () => {} }) => (
+    <Image
+      src={RightArrow}
+      alt=">"
+      className={className}
+      onClick={onClick}
+      height={21}
+      width={12}
+      style={style}
+    />
+  );
 
-  function SamplePrevArrow(props: {
-    className: any;
-    style: any;
-    onClick: any;
-  }) {
-    const { className, style, onClick } = props;
-    return (
-      <Image
-        src={LeftArrow}
-        alt="<"
-        className={className}
-        onClick={onClick}
-        height={21}
-        width={12}
-        style={style}
-      />
-    );
-  }
+  const PrevArrow: React.FC<{
+    className?: string;
+    style?: React.CSSProperties;
+    onClick?: () => void;
+  }> = ({ className = "", style = {}, onClick = () => {} }) => (
+    <Image
+      src={LeftArrow}
+      alt="<"
+      className={className}
+      onClick={onClick}
+      height={21}
+      width={12}
+      style={style}
+    />
+  );
 
   const settings = {
     speed: 700,
@@ -53,20 +47,8 @@ const Insurers = () => {
     arrows: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    nextArrow: (
-      <SampleNextArrow
-        className={undefined}
-        style={undefined}
-        onClick={undefined}
-      />
-    ),
-    prevArrow: (
-      <SamplePrevArrow
-        className={undefined}
-        style={undefined}
-        onClick={undefined}
-      />
-    ),
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     responsive: [
       {
         breakpoint: 900,
@@ -92,22 +74,24 @@ const Insurers = () => {
   };
 
   return (
-    <InsurersSection className="container" id="insurers">
-      <h3>Asseguradoras parceiras</h3>
-      <p>As melhores opções para você</p>
+    <FadeIn>
+      <InsurersSection className="container" id="insurers">
+        <h3>Asseguradoras parceiras</h3>
+        <p>As melhores opções para você</p>
 
-      <InsurersCaroussel>
-        <Slider {...settings}>
-          {InsurerItems.map(({ id, img, alt }) => (
-            <div key={id}>
-              <figure>
-                <Image src={img} alt={alt} />
-              </figure>
-            </div>
-          ))}
-        </Slider>
-      </InsurersCaroussel>
-    </InsurersSection>
+        <InsurersCaroussel>
+          <Slider {...settings}>
+            {InsurerItems.map(({ id, img, alt }) => (
+              <div key={id}>
+                <figure>
+                  <Image src={img} alt={alt} />
+                </figure>
+              </div>
+            ))}
+          </Slider>
+        </InsurersCaroussel>
+      </InsurersSection>
+    </FadeIn>
   );
 };
 

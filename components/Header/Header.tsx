@@ -1,15 +1,15 @@
 import Image from "next/image";
-import React, { useContext, useState } from "react";
+import { useContext } from "react";
 import { HeaderComponent } from "./styled";
 import { WhatsApp } from "../E__export";
 import Link from "next/link";
-import { Contexts } from "../../contexts/GlobalContext";
+import { ContextProps, Contexts } from "../../contexts/GlobalContext";
 import { FaBars } from "react-icons/fa";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Header = () => {
-  const { mobile, setContactForm, setActiveAside, activeAside } =
-    useContext(Contexts);
+  const context = useContext(Contexts) as ContextProps;
+  const { mobile, setContactForm, setActiveAside, activeAside } = context;
 
   return (
     <HeaderComponent>

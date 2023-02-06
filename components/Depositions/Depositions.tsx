@@ -1,8 +1,8 @@
 import Image from "next/image";
-import React from "react";
 import Slider from "react-slick";
 import { DepositionsItems } from "../../utils/items";
 import { BlueChat } from "../E__export";
+import FadeIn from "../FadeInDivEffect/FadeInDivEffect";
 import { Card, DepoisitionsCaroussel, DepoisitionsSection } from "./styled";
 
 const Depositions = () => {
@@ -34,28 +34,30 @@ const Depositions = () => {
   };
 
   return (
-    <DepoisitionsSection className="container">
-      <h3>Avaliações de clientes</h3>
-      <p>Ouvindo nossos clientes e oferecendo proteção.</p>
+    <FadeIn>
+      <DepoisitionsSection className="container">
+        <h3>Avaliações de clientes</h3>
+        <p>Ouvindo nossos clientes e oferecendo proteção.</p>
 
-      <DepoisitionsCaroussel>
-        <Slider {...settings}>
-          {DepositionsItems.map(({ id, img, name, profession, text }) => (
-            <Card key={id}>
-              <div>
-                <Image src={BlueChat} alt="Avaliações" className="bluechat" />
-                <figure>
-                  <Image src={img} alt={name} />
-                </figure>
-                <h4>{name}</h4>
-                <h5>{profession}</h5>
-                <p>{text}</p>
-              </div>
-            </Card>
-          ))}
-        </Slider>
-      </DepoisitionsCaroussel>
-    </DepoisitionsSection>
+        <DepoisitionsCaroussel>
+          <Slider {...settings}>
+            {DepositionsItems.map(({ id, img, name, profession, text }) => (
+              <Card key={id}>
+                <div>
+                  <Image src={BlueChat} alt="Avaliações" className="bluechat" />
+                  <figure>
+                    <Image src={img} alt={name} />
+                  </figure>
+                  <h4>{name}</h4>
+                  <h5>{profession}</h5>
+                  <p>{text}</p>
+                </div>
+              </Card>
+            ))}
+          </Slider>
+        </DepoisitionsCaroussel>
+      </DepoisitionsSection>
+    </FadeIn>
   );
 };
 
